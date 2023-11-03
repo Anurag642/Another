@@ -1,0 +1,34 @@
+#main{
+    background-color:rgba(241, 237, 237, 0.881);
+    max-width: 5000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: thick solid black;
+}
+body{
+    background-color: rgb(117, 118, 82);
+}
+.img{
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 3100px;
+    border: thick solid black;
+    margin: 1;
+}
+#top{
+    padding-top: 8px ;
+    padding-bottom: 8px;
+    padding-left: 10px ;
+    padding-right: 10px;
+    background-color: rgb(182, 171, 212);
+    display: flex;
+    justify-content: space-between;
+    border: thick solid black;
+}
+h1,h3{
+    text-align: center;
+}
+h3{
+    font-style: bold;
+}
