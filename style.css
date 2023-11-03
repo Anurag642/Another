@@ -1,34 +1,210 @@
-#main{
-    background-color:rgba(241, 237, 237, 0.881);
-    max-width: 5000px;
-    margin: 0 auto;
-    margin-top: 50px;
-    border: thick solid black;
-}
-body{
-    background-color: rgb(117, 118, 82);
-}
-.img{
-    max-width: 200px;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 3100px;
-    border: thick solid black;
-    margin: 1;
-}
-#top{
-    padding-top: 8px ;
-    padding-bottom: 8px;
-    padding-left: 10px ;
-    padding-right: 10px;
-    background-color: rgb(182, 171, 212);
-    display: flex;
-    justify-content: space-between;
-    border: thick solid black;
-}
-h1,h3{
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  .b{
+    text-align: left;
+    color: aliceblue;
+
+    margin: -75px;
+    padding: 7vh;
+    
 }
-h3{
-    font-style: bold;
+
+
+.body{
+    background-image: url(p2359206110-4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+
+
+
+
+                 /*contact*/
+  #contact{
+      background-color: rgb(248,248, 248);
+  }
+  .contact-content{
+      flex-direction: column;
+      align-items: stretch;
+  }
+  .contact-left{
+      margin-bottom: 5rem;
+  }
+  .contact-left.lead{
+      padding: 0.5rem;
+  }
+  .contact-left{
+      margin-top: 3rem;
+  }
+  .contact-left form.form-control{
+      display: block;
+      margin: 1.6rem 0;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      width: 100%;
+    }
+    .contact-left form .form-control ::placeholder{
+        font-size: 15px;
+        font-family: "poppins",sans-serif;
+    }
+  .contact-left .btn-submit{
+      padding: 1.4rem 3rem;
+      font-family: "poppins",sans-serif;
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      margin-top: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.6rem;
+      transition: var(--transition);
+  }
+.contact-left .btn-submit:hover{
+    background-color: #000;
+}
+@media(min-width: 576px){
+    .title h2{
+        font-size: 4rem;
+    }
+    .work-botton{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .portfolio-grid > div{
+        height: 300px;
+        overflow:hidden ;
+    }
+    .portfolio-grid > div img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .contact-left  form .form-control{
+        max-width: 500px;
+    }
+}
+
+@media( min-width: 768px){
+    .header-content h1{
+        font-size: 7rem;
+    }
+    .about-content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6rem;
+        row-gap: 0;
+    }
+    .about-left{
+          margin-bottom: 0;
+    }
+    .about-content{
+        flex-direction: row;
+    }
+    .contact-right{
+        padding-left: 3rem;
+        width: 50%;
+    }
+    .contact-left{
+        width: 50%;
+    }
+}
+
+    
+
+
+
+
